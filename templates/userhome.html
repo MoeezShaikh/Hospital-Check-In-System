@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/newuserhome.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header-dark">
+        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+            <div class="container"><a class="navbar-brand" href="index.html">Healing Hands </a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse"
+                    id="navcol-1">
+                    
+                    <form class="form-inline mr-auto" target="_self">
+                    </form><span class="navbar-text"><a href="/profile" class="login">User Profile</a></span>
+                    <a class="btn btn-light action-button" role="button" href="/logout">Logout</a></div>
+            </div>
+        </nav>
+    </div>
+    <!-- Header -->
+    
+    <div class="article-list">
+        <div class="container">
+            <div class="intro"> 
+                <h2 class="text-center">Welcome Home </h2>
+                <p class="text-center">Book your the latest appointment and consult with our best doctors.</p>
+            </div>
+            <div class="row articles">
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="/static/appointment.jpg"></a>
+                    <h3 class="name">Book Appointment</h3>
+                    <p class="description"></p><a href="/Showappointment" class="action"><i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+                <div
+                    class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="/static/view.jpg"></a>
+                    <h3 class="name">View Appointments</h3>
+                    <p class="description"></p><a href="/Viewappointment" class="action"><i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+                <div
+                    class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="/static/user.jpg" id="user"></a>
+                    <h3 class="name">Go to MyProfile</h3>
+                    <p class="description"></p><a href="/profile" class="action"><i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

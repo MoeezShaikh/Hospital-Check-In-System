@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Appointment form</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/newuserhome.css">
+  <link rel="stylesheet" href="/static/newappointment.css">
+  <script src="/newappointment.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <div class="header-dark">
+    <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+      <div class="container"><a class="navbar-brand" href="/templates/index.html">Healing Hands </a><button
+          class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle
+            navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+
+          <form class="form-inline mr-auto" target="_self">
+          </form>
+          <span class="navbar-text"><a href="/userHome" class="login">Home</a>
+          <span class="navbar-text"><a href="/profile" class="login">Profile</a>
+          </span><a class="btn btn-light action-button" role="button" href="/logout">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Header -->
+
+  <div class="registration-form" style="background-image: url('/static/appointment.jpg');">
+    <form action="/appointment" autocomplete="on" method="POST" enctype="multipart/form-data" id="form-signin">
+      <div class="form-icon">
+        <span><i class="icon icon-user"></i></span>
+      </div>
+      <div class="inputbox">
+        <label for="fname"> First Name</label><br />
+        <input id="fname" class="form-control" name="fname" required="required" type="text" placeholder="First Name" />
+        <br />
+      </div>
+      <div class="inputbox">
+        <label for="lname"> Last Name</label><br />
+        <input id="lname" class="form-control" name="lname" required="required" type="text" placeholder="Last Name" />
+        <br />
+      </div>
+      <div class="inputbox">
+        <label for="email"> Email</label><br />
+        <input id="mail" class="form-control" name="eemail" required="required" type="email"
+          placeholder="eg. abc@gmail.com" />
+        <br />
+      </div>
+      <div class="inputbox">
+        <label for="contactnum">Contact Number</label><br />
+        <input id="contact" class="form-control" name="contact" required="required" type="text" minlength="10"
+          maxlength="10" placeholder="10 digit contact number" />
+        <br />
+      </div>
+      <div class="inputbox">
+        <label for="adhnum">Aadhar Number</label><br />
+        <input id="aadhar" class="form-control" name="aadhar" required="required" type="text" minlength="12"
+          maxlength="12" placeholder="12 digit Aadhar Card Number" />
+        <br />
+      </div>
+      <div class="inputbox">
+        <label for="gender">Gender</label><br />
+        <select id="gender" name="gender" class="form-control">
+          <br />
+          <option value="none" selected>--None--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
+      </div>
+      <div class="inputbox">
+        <label for="doctype">Doctor Type</label><br />
+        <select class="form-control" name="docn" id="country">
+          <option value="">-- None --</option>
+        </select>
+        <br/>
+        <div class="inputbox">
+          <label for="gender">Time Slots</label><br />
+          <select id="gender" name="time" class="form-control">
+            <br />
+            <option value="none" selected>--None--</option>
+            <option value="male">8am-9am</option>
+            <option value="female">10am-11am</option>
+            <option value="other">1pm-2pm</option>
+            <option value="other">4pm-5pm</option>
+            <option value="other">6pm-7pm</option>
+          </select>
+          <br />
+        </div> 
+      
+  <div class="inputbox">
+    <label for="date">Date</label><br />
+    <input id="dat" class="form-control" name="dat" type="date" minlength="12" maxlength="12" placeholder="dd-mm-yy" />
+    <br />
+  </div>
+
+
+
+  <div class="inputbox">
+    <label for="Patient-Condition">Patient Condition</label><br />
+    <select id="condition" name="condition" class="form-control">
+      <br />
+      <option value="none">none</option>
+      <option value="critical">Critical</option>
+      <option value="normal">Normal</option>
+      <option value="emergency">Emergency</option>
+    </select>
+    <br />
+  </div>
+  <div class="inputbox">
+    <label for="file-picker">Photograph</label><br />
+    <input name="photo" type="file" class="form-control" />
+    <br />
+  </div>
+  <div class="login button">
+    <input type="submit" value="Submit" id="submit" />
+  </div>
+
+</div>
+  </form>
+  </div>
+  <script>
+    // show Alert
+    document.querySelector('.alert').style.display = 'block';
+
+    // remove alert message
+    setTimeout(() => {
+      document.querySelector('.alert').style.display = "none";
+
+    }, 2000);
+
+    // reset form
+    document.getElementById('submit').reset();
+  </script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

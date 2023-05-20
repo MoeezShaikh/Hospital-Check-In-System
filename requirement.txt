@@ -1,0 +1,22 @@
+from datetime import datetime
+from flask import Flask, render_template,request,json,redirect 
+import mysql.connector                          
+from collections.abc import Mapping
+from sqlalchemy import true 
+from flask   import session
+import face_recognition
+import cv2 
+import bcrypt
+import bson.binary 
+import base64
+from io import BytesIO
+import numpy as np
+import pandas as pd
+from base64 import b64encode
+from datetime import datetime
+import os
+from PIL import Image 
+from flask_mail import Mail 
+import csv
+import xlsxwriter
+import openpyxl
